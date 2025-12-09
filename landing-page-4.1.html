@@ -619,7 +619,168 @@
 	.icon-textalign {
 		color: #BB6BD9;
 	}
+	
+	  /* Container */
+  .quality-table-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #2d3748;
+  }
 
+  /* Title */
+  .quality-title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 25px;
+  }
+
+  /* Table */
+  .quality-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1rem;
+  }
+
+  .quality-table thead {
+    background: #667EEA;
+    color: white;
+  }
+
+  .quality-table th,
+  .quality-table td {
+    padding: 18px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  /* Wider First Column, narrower 2nd, wider 3 & 4 */
+  .quality-table th:nth-child(1),
+  .quality-table td:nth-child(1) {
+    width: 22%;
+  }
+
+  .quality-table th:nth-child(2),
+  .quality-table td:nth-child(2) {
+    width: 22%;
+  }
+
+  .quality-table th:nth-child(3),
+  .quality-table td:nth-child(3) {
+    width: 28%;
+  }
+
+  .quality-table th:nth-child(4),
+  .quality-table td:nth-child(4) {
+    width: 28%;
+  }
+
+  /* Column Title Size + White Text */
+  .quality-table thead th {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white !important;
+  }
+
+  .quality-table tbody tr:nth-child(even) {
+    background: #f8f9ff;
+  }
+
+  .quality-table tbody tr:hover {
+    background: #eef2ff;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .quality-table th,
+    .quality-table td {
+      padding: 14px;
+      font-size: 0.92rem;
+    }
+
+    .quality-table thead th {
+      font-size: 1.1rem;
+    }
+
+    .quality-title {
+      font-size: 1.9rem;
+    }
+  }
+
+  .qc-wrapper {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #2d3748;
+  }
+
+  .qc-title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  table.qc-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1rem;
+  }
+
+  table.qc-table thead {
+    background: #667EEA;
+    color: white;
+  }
+
+  table.qc-table th, 
+  table.qc-table td {
+    padding: 18px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  table.qc-table th {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  table.qc-table tbody tr:nth-child(even) {
+    background: #f7f9ff;
+  }
+
+  table.qc-table tbody tr:hover {
+    background: #eef2ff;
+  }
+
+  /* Column widths */
+  table.qc-table th:nth-child(1), td:nth-child(1) { width: 18%; }
+  table.qc-table th:nth-child(2), td:nth-child(2) { width: 28%; }
+  table.qc-table th:nth-child(3), td:nth-child(3) { width: 10%; }
+
+  /* Checkmark & X */
+  .check { color: #2ECC71; font-size: 1.4rem; font-weight: bold; }
+  .x { color: #E74C3C; font-size: 1.4rem; font-weight: bold; }
+
+  @media (max-width: 900px) {
+    table.qc-table th, table.qc-table td {
+      padding: 12px;
+      font-size: 0.92rem;
+    }
+    table.qc-table th { font-size: 1.05rem; }
+  }
 
   </style>
 </head>
@@ -628,7 +789,7 @@
     <div class="hero-content">
     <!-- 🎨 -->
       <h1><img src="https://squarespacetools.github.io/squarespace-style-analyzer-pro/icon128.png" alt="" style="height: 1em; width: auto; vertical-align: middle; margin-right: 15px;">Squarespace Style Analyzer Pro</h1>
-      <p>Professional <strong><em>Design Audit</em></strong> tool for Squarespace websites. Immediately analyze styles of headings, paragraphs, buttons, and color palette for <strong><em>consistency</em></strong>. Six critical design <strong><em>Quality Checks</em></strong> of over 40 Points of Design for quality assurance. And much more. Detailed and beautiful reports include specific links to "errors" and detailed location mapping for everything to allow quick and easy fixes. Within minutes, we automate your Design Audit for quality assurance. We save you 5, 10, 15, or more, hours of manual review which could easily miss important inconsistencies. You will rarely, if ever, find our design audit elements, Quality Checks, and reports in any SEO extensions. An incredible addition to your SEO audit.</p>
+      <p>Professional <strong><em>Design Audit</em></strong> tool for Squarespace websites. Immediately analyze styles of headings, paragraphs, buttons, and color palette for <strong><em>consistency</em></strong>. Ten critical design <strong><em>Quality Checks</em></strong> of over 90 Aspects of Design for quality assurance. And much more. Detailed and beautiful reports include specific links to "errors" and detailed location mapping for everything to allow quick and easy fixes. Within minutes, we automate your Design Audit for quality assurance. We save you 5, 10, 15, or more, hours of manual review which could easily miss important inconsistencies. You will rarely, if ever, find our design audit elements, Quality Checks, and reports in any SEO extensions. An incredible addition to your SEO audit.</p>
       
 <!--  <div class="cta-buttons">
         <a href="#" class="btn btn-primary">Add to Chrome - It's Free</a>
@@ -669,7 +830,7 @@
       <div class="feature">
         <span class="feature-icon">✨</span>
         <h3>Brand Style Guide<br />Typography</h3>
-        <p>Generates a complete "Brand Style Guide Typography" report showing all typography and style parameters for headings, paragraphs, and button styles used on your site. Discover and reveal inconsistencies <!--  among all of the following parameters  -->with precise locations for quick corrections. <!--  Our report analyzes the following.</p><br />
+        <p>Generates a complete "Brand Style Guide Typography" report showing all typography and six or more style parameters for each of headings, paragraphs, and button styles used on your site. Discover and reveal inconsistencies <!--  among all of the following parameters  -->with precise locations for quick corrections. <!--  Our report analyzes the following.</p><br />
         <p style="text-align: left;"><em>Headings and Paragraphs</em>:<br />
         <span class="typography-icon icon-fontfamily">A𝒶</span> Font-family<br />
         <span class="typography-icon icon-fontsize">↕️A</span> Font-size<br/>
@@ -712,14 +873,18 @@
       
       <div class="feature">
         <span class="feature-icon"><span style="color: #00cc00;">★</span> <!-- Green --></span>
-        <h3>Six Critical Quality Checks of Over 40 Points of Design</h3>
+        <h3>Ten Critical Quality Checks of Over 90 Aspects of Design</h3>
         <ul class="pricing-features">
         <li>All pages have H1 headings</li>
 		<li>No pages have multiple H1 headings</li>
 		<li>Heading hierarchy is correct on all pages</li>
 		<li>Typography analysis for consistent font sizes, font weight, line height, letter spacing, text-transform,  color, and more, for all style types of headings, paragraphs, and buttons</li>
-		<li>All images have alt text <!-- And, if they don't, receive a detailed HTML report identifying exactly which ones do not. --></li>
-		<li>Multiple checks for colors consistency and accessibility issues</li>
+		<li>All images have alt text</li>
+		<li>Images do not have generic file names</li>
+		<li>Colors consistency using numerous checks</li>
+		<li>Accessibility check for color contrast between text and background</li>
+		<li>Link styling is consistent
+		<li>Mobile usability using numerous checks</li>
 		<center><strong><em>Errors are specifically located to make it easy for corrections.</em></strong></center>
 		</ul>
       </div> 
@@ -736,56 +901,7 @@
         </div>  -->
     </div>
 
-<!-- WHY Our DESIGN AUDIT -->
-<div class="container" style="max-width: 1200px; margin: 0 auto;">
-
-  <h2 class="section-title">Why Our Design Audit?</h2>
-
-  <p class="section-subtitle" style="margin-bottom: 40px;">Our Design Audit Verifies Actual Visual Consistency versus What Is Specified!<br />
-    See if Your Website Meets Your Brand Guidelines and Accessibility.<br />
-    Does Your Website Achieve Good Design Principles and Your Goals?
-  </p>
-      
-  <h3>Our Design Audit transforms an analysis of the styling design of your website from a “here's what we found" data dump to an actionable “here's what needs attention and exactly where."
-  </h3><br />
-
-  <p style="margin-bottom: 22px;">
-    <strong>Our Design Audit solves the "needle in a haystack" problem</strong><br />
-    Instead of a data dump analysis, in which you must hunt through page-by-page reports to find the exact items that vary from the standard, we deliver professionally designed reports that pinpoint for you which styles, of each type, are the variations and exactly where they are located. In some cases, these style type variations may be oversights and have resulted from non-standard actions, and in others they are intentional. Our reports are designed to make it quick and easy for you to immediately decide and take necessary actions.
-  </p>
-
-  <p style="margin-bottom: 22px;">
-  <strong>Consistency and Accessibility Analysis Through Deep Style Variation Detection</strong><br>
-    For example, for Typography, our Design Audit analyzes each style type for variations of font-family, font-size, font-weight, line-height, letter-spacing, text-transform, color, and more, which can be extremely problematic for <em>brand consistency</em>. Our audits catch more issues and our professionally designed reports reveal the difference between data and insight.
-  </p>
-
-  <p style="margin-bottom: 22px;">
-  <strong>Multiple Report Types for Better Clarity</strong><br>
-    We intentionally deliver multiple types of reports. For example, for Typography, one report is by Style to aggregate each style type across all pages. This quickly reveals the problem areas to answer the questions “What are my inconsistencies and where are they?" And the other type of report is by Page to understand "What are all the style variations revealed on each page?"
-  </p>
-
-  <h3 style="color: #667EEA; margin-bottom: 22px;">The above are just a few of the differences between receiving data and asking “what do we do with this?” and our Design Audit that intelligently discovers brand inconsistencies and immediately presents professionally designed reports that give you actionable next steps.</h3>
-
-  <p style="margin-bottom: 8px;">
-    <strong>Perfect for:</strong>
-  </p>
-
-  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
-    ✅ Designers checking work before client delivery
-  </p>
-  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
-    ✅ Agencies ensuring brand guideline compliance
-  </p>
-  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
-    ✅ Companies auditing contractor deliverables
-  </p>
-  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
-    ✅ Design systems teams maintaining consistency
-  </p>
-
-</div>
-<!-- END WHY Our DESIGN AUDIT -->
-
+<!-- BEGIN Why Would You Use Squarespace Style Analyzer Pro? -->
   <div class="use-cases" id="use">
     <div class="container">
       <h2 class="section-title">Why Would You Use<br />Squarespace Style Analyzer Pro?</h2>
@@ -796,7 +912,7 @@
           <div class="use-case-icon">✅</div>
           <div class="use-case-content">
             <h3>Check Your Own Work</h3>
-            <p>Ensure your site follows best practices and brand guidelines before launch and after updates. Check your sites much, much quicker with greater analysis than by checking within the Squarespace developer platform! </p>
+            <p>Ensure your site follows best practices and brand guidelines before launch and after updates. Check your sites much, much quicker with far more detailed analyses than by checking within the Squarespace developer platform! </p>
 <!--            <p class="use-case-note">📍 Note: When we were testing, we found a website that forgot to use a H1 Heading on several pages! And another that used H1 and H3 but no H2! And another that used numerous H1 headings on a page! And another that left out Image Alt Text descriptions on numerous images! Plus you'll find many other types of oversights with this extension's analyses!</p>  -->
           </div>
         </div>
@@ -833,6 +949,7 @@
           </div>
         </div>
       </div>
+<!-- END Why Would You Use Squarespace Style Analyzer Pro? -->
 
 <!--      <div class="try-it-box">
         <h3>Try It and See for Yourself</h3>
@@ -840,6 +957,306 @@
       </div>  -->
     </div>
   </div>
+
+  <!-- BEGIN Compare to SEO -->
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+  <div class="qc-wrapper">
+  <h2 class="qc-title">What’s Unique About Squarespace Style Analyzer Pro?</h2>
+  <h2 class="qc-title">Our Extension Serves a Different Purpose<br />Compared to Five Top SEO Extensions</h2>
+
+  <table class="qc-table">
+    <thead>
+      <tr>
+        <th>Quality Check</th>
+        <th style="min-width: 300px;">Unique Characteristics of Our Design Audit</th>
+        <th>Squarespace<br>Style Analyzer Pro</th>
+        <th>Ubersuggest</th>
+        <th>Similarweb</th>
+        <th>SEO Minion</th>
+        <th>SEOquake</th>
+        <th>MozBar</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Style Consistency -->
+      <tr>
+        <td>⚡&nbsp;Typography Style Consistency</td>
+        <td>Discovers inconsistent typography choices across headings, paragraphs, and buttons that erode brand polish.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+      </tr>
+      
+			<!-- Color Consistency -->
+      <tr>
+        <td>🎨 Color Consistency</td>
+        <td>Analyzes your site’s color usage to reveal too many variations or one-off colors that weaken visual cohesion.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+      </tr>
+
+		 <!-- Heading Hierarchy -->
+      <tr>
+        <td>🔺 Heading Hierarchy</td>
+        <td>Checks H1 to H6 order (for example, H1 jumping straight to H3) to keep the reading flow logical and easy to scan. Added Bonus for SEO: More weighting and importance is given to HTML headings in hierarchical order from H1 down to H6.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+      </tr>
+
+      <!-- Link Styling Consistency -->
+      <tr>
+        <td>🔗 Link Styling Consistency</td>
+        <td>Finds links that don’t look like the rest (color, underline, style) so visitors always recognize what’s clickable.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+      </tr>
+
+      <!-- Generic Images File Names -->
+      <tr>
+        <td>📁 Generic Images File Names</td>
+        <td>Flags low-meaning filenames like “IMG_1234.jpg” so you can replace them with clearer, branded names. Added Bonus for SEO: Descriptive filenames will help ranking.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+      </tr>
+      
+      <!-- Missing Alt Text -->
+      <tr>
+        <td>🖼️ Missing Alt Text</td>
+        <td>Scans your images for missing descriptive alt attributes which are important for accessibility. Added Bonus for SEO: Descriptive alt text provides search engines more content about your site."<td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="check">✔</td>
+        <td class="check">✔</td>
+        <td class="check">✔</td>
+      </tr>
+      
+      <!-- Missing H1 -->
+      <tr>
+        <td>❗ Missing H1</td>
+        <td>Detects pages that lack a primary heading (H1). H1 has strong design importance to provide clarity for the viewer to quickly understand what the page is about. Added Bonus for SEO: Helps search engines understand page relevance.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="check">✔</td>
+        <td class="check">✔</td>
+        <td class="check">✔</td>
+      </tr>
+
+      <!-- Multiple H1 -->
+      <tr>
+        <td>🧩 Multiple H1</td>
+        <td>Finds pages that use multiple H1. For design, this weakens the clarity of the page’s main topic. Added Bonus for SEO: Prevents signal dilution.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="check">✔</td>
+        <td class="check">✔</td>
+        <td class="check">✔</td>
+      </tr>
+
+      <!-- Accessibility for Text Contrast -->
+      <tr>
+        <td>♿ Accessibility for Text Contrast</td>
+        <td>Checks text colors against their background to highlight readability issues and contrast failures. Added Bonus for SEO: Better user experience leads to better rankings.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+      </tr>
+
+      <!-- Mobile Usability -->
+      <tr>
+        <td>📱 Mobile Usability</td>
+        <td>Runs dozens of layout and readability checks specific to mobile devices so your design works on real screens.</td>
+        <td class="check">✔</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+        <td class="x">✘</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+</div>
+  <!-- End Compare to SEO -->  
+
+
+
+  <!-- BEGIN Quality Checks Benefits -->
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+  <div class="quality-table-wrapper">
+  <h2 class="quality-title">Why Do You Need These Quality Checks of<br>Over 90 Aspects of Design?</h2>
+
+  <table class="quality-table">
+    <thead>
+      <tr>
+        <th>Quality Check</th>
+        <th>What Does It Do?</th>
+        <th>Why This Matters</th>
+        <th>Benefits</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Missing H1 -->
+      <tr>
+        <td>❗ Missing H1</td>
+        <td>Detects pages that lack a primary heading (H1). H1 provides stronger clarity to allow the user to quickly understand what the page is about.</td>
+        <td>Ensures each page communicates its main topic.</td>
+        <td>H1 provides stronger clarity to allow the user to quickly understand what the page is about.<br>Added Bonus for SEO: Helps search engines understand page relevance.</td>
+      </tr>
+
+      <!-- Multiple H1 -->
+      <tr>
+        <td>🧩 Multiple H1</td>
+        <td>Finds pages containing more than one H1.</td>
+        <td>More than one H1 weakens the clarity of the page’s main topic. Maintains logical structure for readers and accessibility tools.</td>
+        <td>Improves understanding of the content and readability.<br>Added Bonus for SEO: Prevents signal dilution.</td>
+      </tr>
+
+      <!-- Heading Hierarchy -->
+      <tr>
+        <td>🔺 Heading Hierarchy</td>
+        <td>Identifies incorrect H1–H6 order (e.g., H1 jumping to H3).</td>
+        <td>Prevents content confusion and improves scanning.</td>
+        <td>Keeps the reading flow logical and easy to scan.<br>Added Bonus for SEO: More weighting and importance is given to HTML headings in hierarchical order from H1 down to H6. The primary purpose of heading tags is to create a clear, semantic structure of the content for both users and search engine crawlers. The hierarchy signals the relative importance of each section.</td>
+      </tr>
+
+      <!-- Typography Style Consistency -->
+      <tr>
+        <td>⚡ Typography Style Consistency</td>
+        <td>Finds typography variations across headings, paragraphs, and buttons.</td>
+        <td>Protects brand consistency and reduces visual fragmentation.</td>
+        <td>Creates a cohesive brand system.<br>Added Bonus for SEO: Higher perceived quality.</td>
+      </tr>
+
+      <!-- Link Styling Consistency -->
+      <tr>
+        <td>🔗 Link Styling Consistency</td>
+        <td>Ensures in-content links look consistent and clickable.</td>
+        <td>Improves navigation clarity and user trust.</td>
+        <td>More intuitive browsing.<br>Added Bonus for SEO: Enhances internal linking structure.</td>
+      </tr>
+
+      <!-- Missing Alt Text -->
+      <tr>
+        <td>🖼️ Missing Alt Text</td>
+        <td>Identifies images without descriptive alt attributes.</td>
+        <td>Critical for accessibility compliance.</td>
+        <td>More inclusive experience.<br>Added Bonus for SEO: Better image indexing.</td>
+      </tr>
+
+      <!-- Generic Images File Names -->
+      <tr>
+        <td>📁 Generic Images File Names</td>
+        <td>Detects meaningless names like “IMG_1234.jpg” and many others that this extension detects.</td>
+        <td>Improves media organization and professionalism.</td>
+        <td>Easier content management.<br>Added Bonus for SEO: Descriptive filenames will help ranking.</td>
+      </tr>
+
+      <!-- Color Consistency -->
+      <tr>
+        <td>🎨 Color Consistency</td>
+        <td>Analyzes color usage, overuse of variations, one-off colors, and more.</td>
+        <td>Ensures a clean, unified color palette.</td>
+        <td>Professional visual identity for color usage.</td>
+      </tr>
+      
+      <!-- Accessibility for Text Contrast-->
+      <tr>
+        <td>♿ Accessibility for Text Contrast</td>
+        <td>Detects text contrast failures.</td>
+        <td>Ensures readable text.</td>
+        <td>Professional visual identity for text contrast.<br>Added Bonus for SEO: Better user experience leads to better rankings.</td>
+      </tr>
+
+      <!-- Mobile Usability -->
+      <tr>
+        <td>📱 Mobile Usability</td>
+        <td>Checks how typography and spacing respond on mobile screens.</td>
+        <td>Over half of visitors are mobile-first — readability is essential.</td>
+        <td>Higher engagement and reduced bounce rate.</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+</div>
+  <!-- End Quality Checks Benefits -->
+
+<!-- BEGIN WHY Our DESIGN AUDIT -->
+<div class="container" style="max-width: 1200px; margin: 0 auto;">
+
+  <h2 class="section-title">Why Our Design Audit?</h2>
+
+  <p class="section-subtitle" style="margin-bottom: 40px; color:#000000;">Our Design Audit Verifies Actual Visual Consistency versus What Is Specified!<br />
+    See if Your Website Meets Your Brand Guidelines and Accessibility.<br />
+    Does Your Website Achieve Good Design Principles?
+  </p>
+      
+  <h3 style="color:#667EEA;">Our Design Audit transforms an analysis of the styling of your website from a “here's what we found" data dump to an actionable “here's what needs attention and exactly where."
+  </h3><br />
+
+  <p style="margin-bottom: 22px;">
+    <strong>🔦 Our Design Audit solves the "needle in a haystack" problem</strong><br />
+    Instead of a data dump analysis, in which you must hunt through page-by-page reports to find the exact items that vary from the standard, we deliver professionally designed reports that pinpoint for you which styles, of each type, are the variations and exactly where they are located. In some cases, these style type variations may be oversights and have resulted from non-standard actions, and in others they are intentional. Our reports are designed to make it quick and easy for you to immediately decide and take necessary actions.
+  </p>
+
+  <p style="margin-bottom: 22px;">
+  <strong>🎨 🖌️ 🪄 Consistency and Accessibility Analysis Through Deep Style Variation Detection</strong><br>
+    For example, for Typography, our Design Audit analyzes each style type for variations of font-family, font-size, font-weight, line-height, letter-spacing, text-transform, color, and more, which can be extremely problematic for <em>brand consistency</em>. Our audits catch more issues and our professionally designed reports reveal the difference between data and insight.
+  </p>
+
+  <p style="margin-bottom: 22px;">
+  <strong>📄 📝 📊 📈 Multiple Report Types for Better Clarity</strong><br>
+    We intentionally deliver multiple types of reports. For example, for Typography, one report is by Style to aggregate each style type across all pages. This quickly reveals the problem areas to answer the questions “What are my inconsistencies and where are they?" And the other type of report is by Page to understand "What are all the style variations revealed on each page?"
+  </p>
+
+  <h3 style="color: #667EEA; margin-bottom: 22px;">The above are just a few of the differences between receiving data and asking “what do we do with this?” and our Design Audit that intelligently discovers brand inconsistencies and immediately presents professionally designed reports that give you actionable next steps.</h3>
+
+  <p style="margin-bottom: 8px;">
+    <strong>Perfect for:</strong>
+  </p>
+
+  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
+    ✅ Designers checking work before client delivery
+  </p>
+  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
+    ✅ Agencies ensuring brand guideline compliance
+  </p>
+  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
+    ✅ Companies auditing contractor deliverables
+  </p>
+  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
+    ✅ Design systems teams maintaining consistency
+  </p>
+
+</div>
+<!-- END WHY Our DESIGN AUDIT -->
 
   <div class="how-it-works" id="how">
     <div class="container">
