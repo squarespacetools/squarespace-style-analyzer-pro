@@ -4,9 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Squarespace Style Analyzer Pro - Professional Design Audit Tool</title>
-  <meta name="description" content="Professional Design Audit tool for Squarespace websites. Immediately analyze all styles and color palette for consistency. Five critical Quality Checks not shown in SEO audits.">
+  <meta name="description" content="Professional Design Audit tool for Squarespace websites. Immediately analyze all styles and color palette for consistency. Ten critical Quality Checks not shown in SEO audits.">
   <link rel="icon" href="https://intolos.github.io/squarespace-style-analyzer-pro/icon32.png" type="image/png">
   <style>
+  
+    html {
+      font-size: 18px !important; /* Stable across GitHub & local */
+      /* You can also define a variable for consistency */
+      --base-font-size: 1rem;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -14,7 +21,8 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+		  font-size: 1rem;          /* now 18px base */
       line-height: 1.6;
       color: #2d3748;
       overflow-x: hidden;
@@ -167,6 +175,10 @@
       transition: all 0.3s ease;
       text-align: center;
     }
+    
+    .feature p ul {
+      font-size: 1.4rem;
+    }
 
     .feature:hover {
       transform: translateY(-10px);
@@ -177,6 +189,23 @@
       font-size: 4rem;
       margin-bottom: 20px;
       display: block;
+    }
+    
+    .feature:hover .button-icon {
+      top: 3px;
+      box-shadow: 0 3px 0 #4a5ab8, 0 5px 10px rgba(0,0,0,0.3);
+    }
+
+    .feature h3 {
+      color: #667eea;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .feature p ul {
+      color: #4a5568;
+      line-height: 1.8;
+      font-size: 1.2rem;
     }
 
     .button-icon {
@@ -202,22 +231,6 @@
       height: 18px;
       background: rgba(255,255,255,0.3);
       border-radius: 8px 8px 0 0;
-    }
-
-    .feature:hover .button-icon {
-      top: 3px;
-      box-shadow: 0 3px 0 #4a5ab8, 0 5px 10px rgba(0,0,0,0.3);
-    }
-
-    .feature h3 {
-      color: #667eea;
-      margin-bottom: 15px;
-      font-size: 1.5rem;
-    }
-
-    .feature p {
-      color: #4a5568;
-      line-height: 1.8;
     }
 
     .use-cases {
@@ -660,29 +673,7 @@
     text-align: left;
     vertical-align: top;
   }
-
-  /* Wider First Column, narrower 2nd, wider 3 & 4 */
-/*  .quality-table th:nth-child(1),
-  .quality-table td:nth-child(1) {
-    width: 22%;
-  }
-
-  .quality-table th:nth-child(2),
-  .quality-table td:nth-child(2) {
-    width: 22%;
-  }
-
-  .quality-table th:nth-child(3),
-  .quality-table td:nth-child(3) {
-    width: 28%;
-  }
-
-  .quality-table th:nth-child(4),
-  .quality-table td:nth-child(4) {
-    width: 28%;
-  }  */
-
-  /* Column Title Size + White Text */
+  
   .quality-table thead th {
     font-size: 1.25rem;
     font-weight: 700;
@@ -801,30 +792,36 @@
 			width: 60px !important;
 	}  
 	
-/*	
-	.vertical-header {
-    writing-mode: vertical-rl !important;
-    transform: rotate(180deg) !important;
-    white-space: nowrap !important;
-    text-align: center !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    line-height: 1 !important;
-    display: block !important;
-    height: 200px !important; 
-    width: 22px !important;    
-	}  */
+	.text-shadow {
+  /*  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);  */
+			text-shadow: 0 0 10px #000000;
+			animation: fadeInDown 1s ease;
+  }
+	
+	/* Headings: scale proportionally and consistently */
+	h1, .section-title {
+		font-size: 2.8rem !important;
+	}
+	
+	h2, .qc-title {
+		font-size: 2.2rem !important;
+	}
+	
+	h3 {
+		font-size: 1.7rem !important;
+	}
 
-  </style>
+</style>
 </head>
 <body>
   <div class="hero" id="topofpage">
     <div class="hero-content">
     <!-- 🎨 -->
       <h1><img src="https://intolos.github.io/squarespace-style-analyzer-pro/icon128.png" alt="" style="height: 1em; width: auto; vertical-align: middle; margin-right: 15px;">Squarespace Style Analyzer Pro</h1>
-      <p>Professional <strong><em>Design Audit</em></strong> tool for Squarespace websites.<br /><span style="color:#FFFF00;"><strong><em>Bonus: This extension works on all websites.<br />However, it has over 15 Squarespace-specific factors.</em></strong></span><br /><br />
-      Ten critical design <strong><em>Quality Checks</em></strong> of over 90 Aspects of Design for quality assurance. Immediately analyze styles of headings, paragraphs, buttons, and color palette for <strong><em>consistency</em></strong>.  And much more.<br /><br />
-      Detailed and beautiful reports include specific links to "errors" and detailed location mapping for everything to allow quick and easy fixes.<br /><br />
+      <p>Professional <strong><em>Design Audit</em></strong> tool for Squarespace websites.<br />
+      <span class="text-shadow" style="color:#FFFF00;"><strong><em>Bonus: This extension works on all websites.<br />However, it has over 15 Squarespace-specific factors.</em></strong></span><br /><br />
+      Ever wonder if your Squarespace site has consistent styling across all pages?<br />Ten critical design <strong><em>Quality Checks</em></strong> of over 90 Aspects of Design for quality assurance will let you know. Immediately analyze, and compare across all pages, styles of headings, paragraphs, buttons, all typography, and color palette for <strong><em>consistency</em></strong>.  And much more.<br /><br />
+      Detailed and beautiful reports include specific links to "errors" and location mapping for everything to allow quick and easy fixes.<br /><br />
       Within minutes, we automate your Design Audit for quality assurance. We save you 5, 10, 15, or more, hours of manual review which could easily miss important inconsistencies.<br /><br />
       You will rarely, if ever, find our design audit elements, Quality Checks, and reports in any SEO extensions. An incredible addition to your SEO audit.</p>
       
@@ -843,26 +840,27 @@
 		<div class="features">
 			<div class="feature">
 					<span class="feature-icon"><span style="color: #00cc00;">★</span> <!-- Green --></span>
-					<h3>Ten Critical Quality Checks of Over 90 Aspects of Design</h3>
-					<ul class="pricing-features">
-					<li>All pages have H1 headings</li>
-			<li>No pages have multiple H1 headings</li>
-			<li>Heading hierarchy is correct on all pages</li>
-			<li>Typography analysis for consistent font sizes, font weight, line height, letter spacing, text-transform,  color, and more, for all style types of headings, paragraphs, and buttons</li>
-			<li>All images have alt text</li>
-			<li>Images do not have generic file names</li>
-			<li>Colors consistency using numerous checks</li>
-			<li>Accessibility check for color contrast between text and background</li>
-			<li>Link styling is consistent
-			<li>Mobile usability using numerous checks</li>
-			<center><strong><em>Errors are specifically located to make it easy for corrections.</em></strong></center>
-			</ul>
+					<h3>Ten Critical Checks of Over 90 Aspects of Design for Quality Assurance</h3>
+					<ul class="pricing-features">Checks across all pages:
+						<li>Typography analysis for consistent font sizes, font weight, line height, letter spacing, text-transform,  color, and more, for all style types of headings, paragraphs, and buttons</li>
+						<li>All pages have H1 headings</li>
+						<li>No pages have multiple H1 headings</li>
+						<li>Heading hierarchy is correct on all pages</li>
+						<li>Colors consistency across all pages. Swatches and color codes of all colors used. Color Families and variations grouping identifying similar shades. Outlier detection of colors used 1-2 times. Page-by-Page breakdown of all colors used on each page. Recommended Color Palette with consolidation suggestions.</li>
+						<li>All images have alt text</li>
+						<li>Images do not have generic file names</li>
+						<li>WCAG Accessibility check for color contrast between text and background</li>
+						<li>Link styling is consistent
+						<li>Mobile usability using a multitude of checks</li>
+					<center><strong><em>In all reports, errors are specifically located to make it easy for corrections.</em></strong></center>
+					</ul>
 			</div>    
     
       <div class="feature">
         <span class="feature-icon">✨</span>
         <h3>Brand Style Guide<br />Typography</h3>
-        <p>Generates a complete "Brand Style Guide Typography" report showing all typography and six or more style parameters for each of headings, paragraphs, and button styles used on your site. Discover and reveal inconsistencies <!--  among all of the following parameters  -->with precise locations for quick corrections. <!--  Our report analyzes the following.</p><br />
+        <p>Generates a complete "Brand Style Guide Typography" report showing all typography and six or more style parameters for each of headings, paragraphs, and button styles used on your site. Discover and reveal inconsistencies <!--  among all of the following parameters  -->with precise locations for quick corrections. 
+        <!--  Our report analyzes the following.</p><br />
         <p style="text-align: left;"><em>Headings and Paragraphs</em>:<br />
         <span class="typography-icon icon-fontfamily">A𝒶</span> Font-family<br />
         <span class="typography-icon icon-fontsize">↕️A</span> Font-size<br/>
@@ -930,7 +928,7 @@
       <div class="feature">
         <span class="feature-icon">📊</span>
         <h3>Beautiful Reports</h3>
-        <p>Export to CSV for spreadsheet analysis. Export to stunning HTML reports, for viewing in your browser, with interactive table of contents, complete presentation of all styles and their specifications, and precise error locations. Multiple reports, including ordering by styles across all pages as well as all styles used on page by page presentations, reveal inconsistencies from every conceivable viewpoint to pinpoint items for corrections.</p>
+        <p>Up to 10 beautifully styled and easy-to-read reports as needed depending on the specific analysis. Export to CSV for spreadsheet analysis. Export to stunning HTML reports, for viewing in your browser, with interactive table of contents, complete presentation of all typography and color specifications, and precise error locations. Multiple reports, including ordering by styles across all pages as well as all styles used on page by page presentations, reveal inconsistencies from every conceivable viewpoint to pinpoint items for corrections.</p>
       </div>     
     </div>
   </div>
@@ -1165,9 +1163,20 @@ In contrast, our report shows a listing of only the images with missing alt text
             <p>Super quick to see if any website is a Squarespace site. Shows a message if it's not. Perfect for competitive analysis and research.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+			
+			<p style="margin-bottom: 8px;">
+			<ul style="list-style-type: none;"><strong>Perfect for:</strong>
+      <li>✅ Squarespace developers checking work before client delivery of initial website and updates</li>
+			<li>✅ Companies auditing contractor deliverables</li>
+			<li>✅ Agencies ensuring brand guideline compliance</li>
+			<li>✅ Design systems teams maintaining consistency</li>
+			<li>✅ Quality Assurance professionals verifying site consistency before launch</li>
+			<li>✅ Project Managers to ensure team members follow design guidelines</li>
+			<li>✅ Website Owners checking contractor work to maintain standards</li>
+			</ul>
+	  </div>
+	</div>  
+</div> 
 <!-- END Why Would You Use Squarespace Style Analyzer Pro? -->
 
 <!-- BEGIN Quality Checks Benefits -->
@@ -1307,23 +1316,6 @@ In contrast, our report shows a listing of only the images with missing alt text
   </p>
 
   <h3 style="color: #667EEA; margin-bottom: 22px;">The above are just a few of the differences between receiving data and asking “what do we do with this?” and our Design Audit that intelligently discovers brand inconsistencies and immediately presents professionally designed reports that give you actionable next steps.</h3>
-
-  <p style="margin-bottom: 8px;">
-    <strong>Perfect for:</strong>
-  </p>
-
-  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
-    ✅ Designers checking work before client delivery
-  </p>
-  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
-    ✅ Agencies ensuring brand guideline compliance
-  </p>
-  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
-    ✅ Companies auditing contractor deliverables
-  </p>
-  <p style="font-size: 19px; line-height: 1.65; margin: 0;">
-    ✅ Design systems teams maintaining consistency
-  </p>
 
 </div>
 <!-- END WHY Our DESIGN AUDIT -->
